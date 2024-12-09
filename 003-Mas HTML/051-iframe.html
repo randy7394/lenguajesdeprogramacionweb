@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La web de Randy Morales</title>
+        <style>
+            :root {
+                --primary-color: rgb(45, 103, 250);
+                --background-color: #F0F8FF;
+                --content-width: 800px;
+            }
+
+            @font-face {
+                font-family: 'Titulo';
+                src: url(fuentes/titulo.otf);
+            }
+            @font-face {
+                font-family: 'Parrafo';
+                src: url(fuentes/parrafo.ttf);
+            }
+
+            body {
+                color: var(--primary-color);
+                background-color: var(--background-color);
+                font-family: 'Parrafo',serif;
+                margin: 0;
+                padding: 0
+            }
+
+            header,
+            main,
+            footer {
+                width: var(--content-width);
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            h1 {
+                font-family: 'Titulo', sans-serif;
+                font-size: 64px;
+                font-weight: normal;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            h2 {
+                font-size: 12px;
+                font-style: italic;
+            }
+
+            #inicio img, 
+            #sobremi img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            #sobremi .imagenSobreMi {
+                width: 200px;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline-block;
+                padding:10px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: inherit;
+                text-transform:uppercase;
+            }
+
+            section {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            
+            section hr {
+                text-align: center;
+            }
+
+            section img {
+                border-radius: 10px;
+            }
+
+            .flex1 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                column-gap: 20px;
+            }
+
+            section table thead tr{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                La web de Randy Morales
+            </h1>
+            <h2>
+                Programador, contador y deportista
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobremi">
+                            Sobre Mi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cursos">
+                            Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="inicio">
+                <h3>Inicio</h3>
+                <img src="imagenes/pancarta.jpeg" alt="Pancarta">
+            </section>
+            <section id="sobremi">
+                <h3>Sobre Mi</h3>
+                <div class="flex1">
+                    <img src="imagenes/randy.jpeg" alt="Randy" class="imagenSobreMi">
+                    <p>
+                        Soy un programador web, contador y deportista. Mi pasión por el desarrollo de software me ha llevado a formar parte de la comunidad de desarrolladores de software, donde he trabajado desde 2024 hasta la fecha. Desde entonces he estado aprendiendo para la mejora de mis habilidades.
+                    </p>
+                </div>
+            </section>
+            <section id="cursos">
+                <h3>Cursos</h3>
+                <p>A continuación te muestro los cursos que he impartido hasta la fecha.</p>
+                <table border=1 width=100%>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Curso</th>
+                            <th>Duración</th>
+                            <th>Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10-01-2025 </td>
+                            <td>Curso de HTML</td>
+                            <td>36h</td>
+                            <td>Mastermedia</td>
+                        </tr>
+                        <tr>
+                            <td>25-01-2025 </td>
+                            <td>Curso de PHP</td>
+                            <td>20h</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <td>07-02-2025 </td>
+                            <td>Curso de Node.js</td>
+                            <td>40h</td>
+                            <td>Mastermedia</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="blog">
+                <h3>Blog</h3>
+                <article>
+                    <img src="imagenes/blog1.jpg" alt="Blog 1">
+                    <h4>Viaje a Londres</h4>
+                    <time>12-11-2024</time>
+                    <p>Excepteur est adipisicing irure magna enim et. Pariatur do laborum do laboris sit nostrud quis aliquip esse. Cillum quis cupidatat adipisicing fugiat proident dolore. Minim cillum incididunt dolor.</p>
+                </article>
+                <article>
+                    <img src="imagenes/blog2.jpg" alt="Blog 2">
+                    <h4>Viaje a Paris</h4>
+                    <time>1-8-2024</time>
+                    <p>Est deserunt dolore deserunt fugiat amet tempor. Officia Lorem ad sint proident. Mollit commodo ut velit aute eiusmod. Duis velit amet sint dolore. Ut elit ex amet officia ut aliqua esse do in anim sunt ad. Qui tempor deserunt minim laboris commodo minim quis consequat voluptate.</p>
+                </article>  
+                <article>
+                    <img src="imagenes/blog3.jpg" alt="Blog 3">
+                    <h4>Viaje a Sevilla</h4>
+                    <time>30-3-2019</time>
+                    <p>Eu ullamco occaecat ea labore adipisicing amet. Culpa exercitation aliquip commodo aliqua laboris eiusmod. Officia duis laboris ad incididunt ex nulla proident veniam aliqua consequat amet ut. Velit dolor incididunt sit do in ad ipsum sint tempor occaecat do. Sit fugiat consectetur consequat. Dolore qui ea laborum sunt amet sit consequat aliquip sit voluptate.</p>
+                </article>  
+            </section>
+            <section id="contacto">
+                <h3>Contacto</h3>
+                <form>
+                    <label for="nombre">Introduce tu nombre</label>
+                    <input type="text" id="nombre">
+                    <label for="correo">Introduce tu correo electrónico</label>
+                    <input type="email" id="correo">
+                    <label for="mensaje">Introduce tu mensaje</label>
+                    <textarea id="mensaje"></textarea>
+                    <input type="submit">
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4352.473735242388!2d-86.19074768896361!3d12.148607832336614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fda2f09da8d9%3A0x4a7b95e4a7991ca5!2sServicios%20Litogr%C3%A1ficos%20Ebenezer!5e1!3m2!1sen!2ses!4v1733768044484!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
